@@ -36,6 +36,12 @@ jobs:
         id: validate
         run: terraform validate -no-color
 
+      - name: Verify Snowflake secrets exist
+        run: |
+          for v in SNOWFLAKE_ACCOUNT SNOWFLAKE_USER SNOWFLAKE_ROLE; do
+          if [ -z "${!v}" ]; then echo "$v MISSING"; else echo "$v OK"; fi
+          done
+
       - name: Terraform Apply
         id: apply
         run: terraform apply -auto-approve
