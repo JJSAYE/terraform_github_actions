@@ -20,7 +20,7 @@ provider "snowflake" {
   user     = var.SNOWFLAKE_USER
   region   = var.SNOWFLAKE_REGION
   password = var.SNOWFLAKE_PASSWORD
-  role = var.SNOWFLAKE_ROLE
+  role     = var.SNOWFLAKE_ROLE
 }
 
 resource "snowflake_database" "demo_db" {
