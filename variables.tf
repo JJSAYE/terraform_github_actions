@@ -17,6 +17,6 @@ variable "SNOWFLAKE_PASSWORD" {
 provider "snowflake" {
   account = var.SNOWFLAKE_ACCOUNT
   user    = var.SNOWFLAKE_USER
-  role    = var.SNOWFLAKE_ROLE
+  region    = var.SNOWFLAKE_REGION
   password = var.SNOWFLAKE_PASSWORD
 }
