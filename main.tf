@@ -1,8 +1,8 @@
 terraform {
   required_providers {
     snowflake = {
-      source  = "chanzuckerberg/snowflake"
-      version = "0.25.17"
+      source  = "Snowflake-Labs/snowflake"
+      version = "~> 0.90"
     }
   }
 
@@ -16,7 +16,7 @@ terraform {
 }
 
 provider "snowflake" {
-  account  = var.SNOWFLAKE_ACCOUNT
+  account_name  = var.SNOWFLAKE_ACCOUNT
   username = var.SNOWFLAKE_USER
   password = var.SNOWFLAKE_PASSWORD
   role     = var.SNOWFLAKE_ROLE
