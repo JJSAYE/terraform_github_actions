@@ -15,9 +15,9 @@ variable "SNOWFLAKE_PASSWORD" {
 }
 
 
-provider "snowflake" {
-  account  = var.SNOWFLAKE_ACCOUNT
-  user     = var.SNOWFLAKE_USER
-  region   = var.SNOWFLAKE_REGION
-  password = var.SNOWFLAKE_PASSWORD
-}
+#provider "snowflake" {
+#  account  = var.SNOWFLAKE_ACCOUNT
+#  user     = var.SNOWFLAKE_USER
+#  region   = var.SNOWFLAKE_REGION
+#  password = var.SNOWFLAKE_PASSWORD
+#}
