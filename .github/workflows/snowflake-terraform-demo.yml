@@ -29,16 +29,13 @@ jobs:
 
 
       - name: Terraform Init
-        working-directory: ./terraform
         id: init
         run: terraform init
 
       - name: Terraform Validate
-        working-directory: ./terraform
         id: validate
         run: terraform validate -no-color
 
       - name: Terraform Apply
-        working-directory: ./terraform
         id: apply
         run: terraform apply -auto-approve
