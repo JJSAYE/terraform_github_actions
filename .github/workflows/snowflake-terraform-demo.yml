@@ -22,6 +22,12 @@ jobs:
         id: fmt
         run: terraform fmt -check
 
+      - name: Debug paths
+        run: |
+          pwd
+          ls -la
+
+
       - name: Terraform Init
         working-directory: ./terraform
         id: init
