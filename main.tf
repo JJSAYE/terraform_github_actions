@@ -16,10 +16,12 @@ terraform {
 }
 
 provider "snowflake" {
-  account_name = var.SNOWFLAKE_ACCOUNT
-  username     = var.SNOWFLAKE_USER
-  password     = var.SNOWFLAKE_PASSWORD
-  role         = var.SNOWFLAKE_ROLE
+  account_name      = "ZB00879"
+  organization_name = "AHBWGBT"
+  username          = var.SNOWFLAKE_USER
+  password          = var.SNOWFLAKE_PASSWORD
+  role              = var.SNOWFLAKE_ROLE
+  region            = "us-west-2"
 }
 
 resource "snowflake_database" "demo_db" {
