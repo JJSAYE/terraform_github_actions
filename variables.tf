@@ -13,3 +13,7 @@ variable "SNOWFLAKE_USER" {
 variable "SNOWFLAKE_PASSWORD" {
   type = string
 }
+
+variable "SNOWFLAKE_ROLE" {
+  type = string
+}
